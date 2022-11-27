@@ -23,7 +23,7 @@ def sort_libs(correct_order, libs, lib_suffix='', reverse_result=False):
 
 class LibnameConan(ConanFile):
     name = "optick"
-    version = "1.3.1.0"
+    version = "1.4.0.0"
     description =   "A profiler for game engines"
     # topics can get used for searches, GitHub topics, Bintray tags etc. Add here keywords about the library
     topics = ("conan", "corrad", "magnum", "filesystem", "console", "environment", "os")
@@ -52,7 +52,6 @@ class LibnameConan(ConanFile):
     _build_subfolder = "build_subfolder"
 
     requires = (
-        # "zstd/1.4.3",
     )
 
     # temporary until release fixes interconnect issues on windows/release builds
